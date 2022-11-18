@@ -2,6 +2,9 @@
 /*I know functions are one of the hardest parts in JavaScript
 lets create a function without arguments that will ask the user for the following details using the
 prompt
+1) What is your profession? store the value in var called profession
+2) How old are you? store the value in var called age
+3) Do You Have Working Experience in web development? Enter Numbers from 0 or 10...? store the value in var called experience
 
 After collection of the details pass those arguments into new anonymous function saved in
 thisIsMe variable. This function will need to print all of the details from the previous
@@ -19,13 +22,9 @@ This function should print something like this:
 That Means you are Senior Web Developer
 */
 
-// lets create a function without arguments
 function details () {
-    // 1) What is your profession? store the value in var called profession
     var profession = prompt('What is your profession?');
-    // 2) How old are you? store the value in var called age
     var age = prompt('How old are you?');
-    // 3) Do You Have Working Experience in web development? Enter Numbers from 0 or 10...? store the value in var called experience
     var experience = prompt('Do You Have Working Experience in web development? Enter Numbers from 0 or 10...?');
 
     // console.log(profession, age, experience);
@@ -33,8 +32,6 @@ function details () {
     thisIsMe(profession, age, experience);
 }
 
-/* After collection of the details pass those arguments into new anonymous function saved in
-   thisIsMe variable. */
 var thisIsMe = (profession, age, experience) => {
 
     console.log(`1. ${profession}`);
